@@ -13,8 +13,8 @@ module.exports = transformTools.makeStringTransform('preprocessify', options,
     if (transformOptions.config) {
       preprocessContext = transformOptions.config;
     }
-    if(cfgd && cfgd.context) {
-      contextFromJson = require(cfgd.context);
+    if(cfgd && cfgd.c) {
+      contextFromJson = require(cfgd.c);
     }
     done(
       null,
